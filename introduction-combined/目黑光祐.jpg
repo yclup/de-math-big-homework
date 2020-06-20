@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+<svg id="svg2" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns="http://www.w3.org/2000/svg" sodipodi:docname="Folder_Hexagonal_Icon.svg" height="31px" sodipodi:version="0.32" width="36px" xmlns:cc="http://web.resource.org/cc/" xmlns:dc="http://purl.org/dc/elements/1.1/" sodipodi:docbase="E:\SVG\Commons\HexIcon" xmlns:sodipodi="http://inkscape.sourceforge.net/DTD/sodipodi-0.dtd">
+ <sodipodi:namedview id="base" bordercolor="#666666" pagecolor="#ffffff" borderopacity="1.0" showguides="true"/>
+ <metadata id="metadata4">
+  <rdf:RDF id="RDF5">
+   <cc:Work id="Work6" rdf:about="">
+    <dc:format id="format7">image/svg+xml</dc:format>
+    <dc:type id="type9" rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+   </cc:Work>
+  </rdf:RDF>
+ </metadata>
+ <g id="layer1">
+  <path id="rect1291" d="m26.992 31l9.008-15.5-9.008-15.5h-17.984l-9.008 15.5 9.0076 15.5h17.984z" fill-rule="evenodd" sodipodi:nodetypes="ccccccc" fill="#323296"/>
+  <path id="rect1363" d="m26.1 6.9703l0.968 1.7107h-11.836l0.839-1.7107h10.029zm3.394 2.1159v14.944h-22.988l-0.0002-14.944 22.988 0.0002z" sodipodi:nodetypes="cccccccccc" fill="#fff"/>
+ </g>
+</svg>
