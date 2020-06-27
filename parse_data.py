@@ -17,6 +17,7 @@ import os
 import re
 from selenium import webdriver
 import time
+from math import log, sqrt
 
 SAVE_FILE = 'data.txt'  # 原始数据保存在SAVE_FILE中
 NEW_SAVE_FILE = 'vadata.txt'  # 该文件没有用
@@ -113,8 +114,11 @@ class VoiceActor:
         return self.name
 
 
-def get_weight(anime, cv1, cv2):  # 用来得到
-    return anime['cast'].index(cv1) + anime['cast'].index(cv2)
+def get_weight(anime, cv1, cv2):
+    score_factor = float(anime["score"])
+    index_factor = float(anime['cast'].index(
+        cv1) + anime['cast'].index(cv2)) / len(anime['cast'])
+    return (sqrt(index_factor) / log(score_factor, 10)) * 50
 
 
 def to_json(database):
@@ -267,9 +271,7 @@ def compute_centrality(g, cv_dic):
 
 def test():
     database = get_data(SAVE_FILE)
-    cv_dic = get_cv_dic(database)
-    g = generate_graph(cv_dic, database)
-    get_pos(g)
+    to_json(database)
     """
     if os.path.exists(GRAPH_PATH):
         g = networkx.read_gpickle(GRAPH_PATH)
@@ -287,11 +289,10 @@ def test():
     #tree = networkx.algorithms.tree.mst.minimum_spanning_edges(g, weight='weight')
     #total_weight = sum((item[3]['weight'] for item in tree))
     print(len(g.nodes))
-    # net_info(cv_dic)
+    # net_info(cv_dic)g
 
     # get_pos(cv_dic)
 
     # to_json(database)
     """
-# test()
-add_results_number()
+test()
